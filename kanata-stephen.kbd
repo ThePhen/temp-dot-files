@@ -1,0 +1,35 @@
+
+(defcfg
+  process-unmapped-keys yes ;; undefined keys send their original keycode
+  concurrent-tap-hold   yes ;; needed for the chordsv2 feature (see docs)
+)
+
+(defsrc
+  caps v    j    h    k    
+  l    p    o    u    r
+  lsft rsft ret
+)
+
+(deflayer default
+  @cap @v1  _    _    _    
+  _    _    _    _    _
+  _    _    @ret
+)
+
+(deflayer arrows
+  _    _    down   left up 
+  rght del  bspc M-z  lrld
+  _    _    _
+)
+
+(defalias undo-macro (macro lmet z))
+
+(defalias
+  ret (tap-hold-press 200 200 ret rctl)
+  cap (tap-hold-press 200 200 esc lctl)
+  v1  (tap-hold-press 200 200 v   (layer-toggle arrows))
+)
+
+(defchordsv2
+  (, .) f12 400 first-release ()
+)
