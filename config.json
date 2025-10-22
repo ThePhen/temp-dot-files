@@ -1,0 +1,263 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Safari.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
+        },
+        {
+          "key" : "g",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
+          "key" : "n",
+          "type" : "application",
+          "value" : "/System/Applications/Notes.app"
+        },
+        {
+          "key" : "v",
+          "type" : "application",
+          "value" : "/Applications/Visual Studio Code.app"
+        },
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/Applications/iTerm.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/Users/stephenhenderson/Desktop/A Less Clean Desk/Factorio.app"
+        },
+        {
+          "key" : "1",
+          "type" : "application",
+          "value" : "/Applications/1Password.app"
+        },
+        {
+          "key" : "l",
+          "type" : "application",
+          "value" : "/System/Applications/Calendar.app"
+        },
+        {
+          "key" : "o",
+          "type" : "application",
+          "value" : "/Applications/Obsidian.app"
+        },
+        {
+          "key" : "c",
+          "type" : "application",
+          "value" : "/Applications/Google Chrome.app"
+        },
+        {
+          "key" : "a",
+          "type" : "folder",
+          "value" : "/Applications"
+        },
+        {
+          "key" : "p",
+          "type" : "application",
+          "value" : "/Applications/Plex.app"
+        },
+        {
+          "key" : "k",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        }
+      ],
+      "key" : "o",
+      "label" : "open",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "e",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        },
+        {
+          "key" : "c",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/open-camera"
+        }
+      ],
+      "key" : "r",
+      "label" : "raycast",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "1",
+          "label" : "100%",
+          "type" : "command",
+          "value" : "~/bin/set-volume 100 &"
+        },
+        {
+          "key" : "7",
+          "label" : "75%",
+          "type" : "command",
+          "value" : "~/bin/set-volume 75 &"
+        },
+        {
+          "key" : "5",
+          "label" : "50%",
+          "type" : "command",
+          "value" : "~/bin/set-volume 50 &"
+        },
+        {
+          "key" : "2",
+          "label" : "25%",
+          "type" : "command",
+          "value" : "~/bin/set-volume 25 &"
+        },
+        {
+          "key" : "9",
+          "label" : "90%",
+          "type" : "command",
+          "value" : "~/bin/set-volume 90 &"
+        },
+        {
+          "key" : "v",
+          "type" : "folder",
+          "value" : "/Users/stephenhenderson/Downloads/vids"
+        },
+        {
+          "key" : "l",
+          "type" : "folder",
+          "value" : "/Users/stephenhenderson/Downloads"
+        }
+      ],
+      "key" : "v",
+      "label" : "volume",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "5",
+          "label" : "5s",
+          "type" : "command",
+          "value" : "~/bin/mute-for-n-secs 5 &"
+        },
+        {
+          "key" : "1",
+          "label" : "15s",
+          "type" : "command",
+          "value" : "~/bin/mute-for-n-secs 15 &"
+        },
+        {
+          "key" : "3",
+          "label" : "30s",
+          "type" : "command",
+          "value" : "~/bin/mute-for-n-secs 30 &"
+        },
+        {
+          "key" : "6",
+          "label" : "60s",
+          "type" : "command",
+          "value" : "~/bin/mute-for-n-secs 60 &"
+        }
+      ],
+      "key" : "m",
+      "label" : "mute",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "1",
+          "label" : "100%",
+          "type" : "command",
+          "value" : "/usr/local/bin/brightness 1.0"
+        },
+        {
+          "key" : "5",
+          "label" : "50%",
+          "type" : "command",
+          "value" : "/usr/local/bin/brightness 0.5"
+        },
+        {
+          "key" : "7",
+          "label" : "75%",
+          "type" : "command",
+          "value" : "/usr/local/bin/brightness 0.75"
+        },
+        {
+          "key" : "2",
+          "type" : "command",
+          "value" : "/usr/local/bin/brightness 0.25"
+        }
+      ],
+      "key" : "b",
+      "label" : "brightness",
+      "type" : "group"
+    },
+    {
+      "key" : "1",
+      "label" : "mute 15s",
+      "type" : "command",
+      "value" : "~/bin/mute-for-n-secs 15 &"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "f",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/toggle-fullscreen"
+        },
+        {
+          "key" : "x",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/maximize"
+        },
+        {
+          "key" : ".",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/reasonable-size"
+        }
+      ],
+      "key" : "w",
+      "type" : "group"
+    },
+    {
+      "key" : "5",
+      "type" : "command",
+      "value" : "~/bin/mute-for-n-secs 5 &"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "l",
+          "label" : "like",
+          "type" : "command",
+          "value" : "~/bin/like-chrome-frontmost-tab"
+        },
+        {
+          "key" : "y",
+          "label" : "goto subs",
+          "type" : "url",
+          "value" : "https://www.youtube.com/feed/subscriptions"
+        }
+      ],
+      "key" : "y",
+      "label" : "youtube",
+      "type" : "group"
+    },
+    {
+      "key" : "t",
+      "type" : "command",
+      "value" : "~/bin/test-osa"
+    }
+  ],
+  "type" : "group"
+}
