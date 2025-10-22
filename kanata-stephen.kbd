@@ -4,32 +4,32 @@
   concurrent-tap-hold   yes ;; needed for the chordsv2 feature (see docs)
 )
 
-(defsrc
+(defsrc ;; these are the keys that this cfg might impact
   caps v    j    h    k    
   l    p    o    u    r
   lsft rsft ret
 )
 
-(deflayer default
+(deflayer default ;; three keys (above) are impacted by these macros
   @cap @v1  _    _    _    
   _    _    _    _    _
   _    _    @ret
 )
 
-(deflayer arrows
+(deflayer arrows ;; this layer is active when "v" is held down
   _    _    down   left up 
-  rght del  bspc M-z  lrld
+  rght del  bspc M-z  lrld ;; `lrld` makes kanata reload this cfg file
   _    _    _
 )
 
-(defalias undo-macro (macro lmet z))
+(defalias undo-macro (macro lmet z)) ;; when called, this will send Command-Z (undo)
 
 (defalias
-  ret (tap-hold-press 200 200 ret rctl)
-  cap (tap-hold-press 200 200 esc lctl)
-  v1  (tap-hold-press 200 200 v   (layer-toggle arrows))
+  ret (tap-hold-press 200 200 ret rctl) ;; tap for Return, hold for Right Control
+  cap (tap-hold-press 200 200 esc lctl) ;; tap for Escape, hold for Left Control
+  v1  (tap-hold-press 200 200 v   (layer-toggle arrows)) ;; tap for "v", hold for arrows layer
 )
 
 (defchordsv2
-  (, .) f12 400 first-release ()
+  (, .) f12 400 first-release () ;; when "," and "." are pressed together, send F12 on first release. This invokes LeaderKey.app to launch apps and scripts
 )
